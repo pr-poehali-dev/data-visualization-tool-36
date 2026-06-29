@@ -93,7 +93,12 @@ export default function Cart() {
                     {totalPrice.toLocaleString("ru-RU")} ₽
                   </span>
                 </div>
-                <button className="w-full bg-white text-black py-3 uppercase tracking-wide text-sm transition-all duration-300 hover:bg-neutral-300">
+                <button
+                  className="w-full py-3 uppercase tracking-wide text-sm font-bold text-black transition-all duration-300"
+                  style={{ backgroundColor: "#b5f25a" }}
+                  onMouseEnter={e => ((e.currentTarget as HTMLElement).style.backgroundColor = "#f5d229")}
+                  onMouseLeave={e => ((e.currentTarget as HTMLElement).style.backgroundColor = "#b5f25a")}
+                >
                   Оформить заказ
                 </button>
               </div>

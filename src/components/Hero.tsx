@@ -35,7 +35,10 @@ export default function Hero() {
         </p>
         <a
           href="#catalog"
-          className="inline-block bg-white text-black px-8 py-3 text-sm uppercase tracking-wide transition-all duration-300 hover:bg-neutral-300"
+          className="inline-block px-8 py-3 text-sm uppercase tracking-wide font-bold text-black transition-all duration-300"
+          style={{ backgroundColor: "#b5f25a" }}
+          onMouseEnter={e => ((e.currentTarget as HTMLElement).style.backgroundColor = "#f5d229")}
+          onMouseLeave={e => ((e.currentTarget as HTMLElement).style.backgroundColor = "#b5f25a")}
         >
           В каталог
         </a>
