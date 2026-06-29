@@ -1,53 +1,59 @@
+import Icon from "@/components/ui/icon";
+
 export default function Footer() {
   return (
     <div
+      id="contact"
       className="relative h-[400px] sm:h-[600px] lg:h-[800px] max-h-[800px]"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
       <div className="relative h-[calc(100vh+400px)] sm:h-[calc(100vh+600px)] lg:h-[calc(100vh+800px)] -top-[100vh]">
         <div className="h-[400px] sm:h-[600px] lg:h-[800px] sticky top-[calc(100vh-400px)] sm:top-[calc(100vh-600px)] lg:top-[calc(100vh-800px)]">
           <div className="bg-neutral-900 py-4 sm:py-6 lg:py-8 px-4 sm:px-6 h-full w-full flex flex-col justify-between">
-            <div className="flex shrink-0 gap-8 sm:gap-12 lg:gap-20">
+            <div className="flex shrink-0 gap-8 sm:gap-12 lg:gap-20 flex-wrap">
               <div className="flex flex-col gap-1 sm:gap-2">
-                <h3 className="mb-1 sm:mb-2 uppercase text-neutral-400 text-xs sm:text-sm">О нас</h3>
+                <h3 className="mb-1 sm:mb-2 uppercase text-neutral-400 text-xs sm:text-sm">Контакты</h3>
                 <a
-                  href="#projects"
-                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
+                  href="tel:+74951234567"
+                  className="flex items-center gap-2 text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
                 >
-                  Проекты
+                  <Icon name="Phone" size={16} />
+                  +7 (495) 123-45-67
                 </a>
                 <a
-                  href="#mission"
-                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
+                  href="mailto:hello@lumino.store"
+                  className="flex items-center gap-2 text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
                 >
-                  Миссия
+                  <Icon name="Mail" size={16} />
+                  hello@lumino.store
                 </a>
-                <a
-                  href="#contact"
-                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
-                >
-                  Связаться
-                </a>
+                <span className="flex items-center gap-2 text-white text-sm sm:text-base">
+                  <Icon name="MapPin" size={16} />
+                  Москва, ул. Дизайна, 1
+                </span>
               </div>
               <div className="flex flex-col gap-1 sm:gap-2">
-                <h3 className="mb-1 sm:mb-2 uppercase text-neutral-400 text-xs sm:text-sm">Обучение</h3>
+                <h3 className="mb-1 sm:mb-2 uppercase text-neutral-400 text-xs sm:text-sm">Соцсети</h3>
                 <a
-                  href="#news"
-                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
+                  href="#"
+                  className="flex items-center gap-2 text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
                 >
-                  Новости
+                  <Icon name="Send" size={16} />
+                  Telegram
                 </a>
                 <a
-                  href="#learn"
-                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
+                  href="#"
+                  className="flex items-center gap-2 text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
                 >
-                  Курсы
+                  <Icon name="Instagram" size={16} />
+                  Instagram
                 </a>
                 <a
-                  href="#publications"
-                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
+                  href="#"
+                  className="flex items-center gap-2 text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
                 >
-                  Статьи
+                  <Icon name="Youtube" size={16} />
+                  YouTube
                 </a>
               </div>
             </div>
